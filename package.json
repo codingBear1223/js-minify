@@ -1,0 +1,28 @@
+{
+  "name": "js-css-minify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "zip:js": "terser src/index.js -o dist/index.js",
+    "zip:css": "postcss src/style/index.css -o dist/style/index.css",
+    "mini:js:manual": "node scripts/minify.js",
+    "zip:img": "npx cwebp public/image.png -o dist/images/image.cwebp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cssnano": "6.0.1",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-nested": "^7.0.2",
+    "terser": "5.19.0",
+    "cwebp": "3.1.0",
+    "cwebp-bin": "^7.0.1"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
